@@ -71,7 +71,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = importconfig.__name__
-copyright = u'{}, {}'.format(datetime.now().year, importconfig.__author__)
+copyright = '{}, {}'.format(datetime.now().year, importconfig.__author__)
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -227,7 +227,7 @@ latex_documents = [
     (
         'index',
         'ImportConfig.tex',
-        u'ImportConfig Documentation',
+        'ImportConfig Documentation',
         importconfig.__author__,
         'manual',
     ),
@@ -262,7 +262,7 @@ man_pages = [
     (
         'index',
         importconfig.__name__,
-        u'ImportConfig Documentation',
+        'ImportConfig Documentation',
         [
             importconfig.__author__,
         ],
@@ -283,7 +283,7 @@ texinfo_documents = [
     (
         'index',
         importconfig.__name__,
-        u'ImportConfig Documentation',
+        'ImportConfig Documentation',
         importconfig.__author__,
         importconfig.__name__,
         'One line description of project.',
@@ -310,7 +310,7 @@ texinfo_documents = [
 epub_title = importconfig.__name__
 epub_author = importconfig.__author__
 epub_publisher = importconfig.__author__
-epub_copyright = u'{}, {}'.format(datetime.now().year, importconfig.__author__)
+epub_copyright = '{}, {}'.format(datetime.now().year, importconfig.__author__)
 
 # The basename for the epub file. It defaults to the project name.
 # epub_basename = importconfig.__name__

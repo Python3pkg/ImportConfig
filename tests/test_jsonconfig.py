@@ -1,5 +1,5 @@
 """JsonConfig base class spec."""
-from __future__ import unicode_literals
+
 
 from unittest import TestCase
 
@@ -22,7 +22,7 @@ class TestJsonConfig(TestCase):
         in the imported file.
         """
         config = JsonConfig('./tests/resources/json/simple.json')
-        assert 'hello' in config.load().keys()
+        assert 'hello' in list(config.load().keys())
 
     def test_jsonconfig_method(self):
         """Test that the jsonconfig (method version) works.

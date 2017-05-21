@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-u"""JSON and YAML parsing with imports.
+"""JSON and YAML parsing with imports.
 
 **Installation**::
 
@@ -48,8 +48,8 @@ over those loaded in sub-documents.
     ✓ Support relative paths for ``@file's`` value
     ✓ Root document take precedence if the same key exists in the imported file
 """
-from __future__ import absolute_import
-from __future__ import unicode_literals
+
+
 
 from . import exceptions
 from .importconfig import ImportConfig

@@ -3,8 +3,8 @@
 ImportConfig can be subclassed for use with parsers that has a function called
 ``load`` to load file-like objects and parse them into python objects.
 """
-from __future__ import print_function
-from __future__ import unicode_literals
+
+
 
 import collections
 import os
@@ -57,7 +57,7 @@ class ImportConfig(object):
             ``dict``
         """
         result = {}
-        for key, value in input_dict.items():
+        for key, value in list(input_dict.items()):
             if key == '@file':
                 contents = self._get_file_path(self.loader, value,
                                                file_root=self._file_root)

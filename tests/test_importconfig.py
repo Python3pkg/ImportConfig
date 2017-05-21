@@ -1,5 +1,5 @@
 """ImportConfig base class spec."""
-from __future__ import unicode_literals
+
 
 import json
 from unittest import TestCase
@@ -22,7 +22,7 @@ class TestSimpleImportConfig(TestCase):
         Asserting 'hello' is in the expanded result as "hello": "world" is
         in the imported file.
         """
-        assert 'hello' in self.config.load().keys()
+        assert 'hello' in list(self.config.load().keys())
 
     def test__get_file_path(self):
         """Assert that ImportConfig#_get_file_path will load a file."""

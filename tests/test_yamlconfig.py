@@ -1,5 +1,5 @@
 """YamlConfig base class spec."""
-from __future__ import unicode_literals
+
 
 from unittest import TestCase
 
@@ -22,7 +22,7 @@ class TestYamlConfig(TestCase):
         in the imported file.
         """
         config = YamlConfig('./tests/resources/yaml/simple.yml')
-        assert 'hello' in config.load().keys()
+        assert 'hello' in list(config.load().keys())
 
     def test_yamlconfig_method(self):
         """Test that the yamlconfig (method version) works.
